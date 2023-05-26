@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>kenny</title>
+</head>
+<body>
+  <div id="EventDiv">
+
+    <h1 id="demo"></h1>
+    <p id="time"></p>
+    <img id="pic" src="dice-1.png" style=" height: 100px; width: 100px; ">
+  
+
+  </div>
+
+
+  <div class="button-container">
+    <button id="changeBg" class = "hover-effect" >Change Bg</button>
+    <button id="goodvibe" class = "hover-effect" >Good vibes</button>
+    <button id="showTime" class = "hover-effect" >Time</button>
+    <button id="changePic" class = "hover-effect" >Change picure</button>
+    <button id="hidePic" class = "hover-effect" >Hide picture</button>
+    <button id="showPic" class = "hover-effect" >Show Picture</button>
+ 
+
+  
+  </div>
+
+	
+
+
+  <script>
+    
+    const changeBgButton = document.getElementById("changeBg");
+    changeBgButton.addEventListener("click", function() {
+      document.body.style.backgroundColor = "lightblue";
+    });
+  
+
+
+
+
+
+
+
+    const goodVibesButton = document.getElementById("goodvibe");
+    goodVibesButton.addEventListener("click", function() {
+        demoElement.textContent = "Be the best version of you!";  
+    });
+  
+
+
+
+
+
+    const timeButton = document.getElementById("showTime");
+    timeButton.addEventListener("click", function() {
+      const timeElement = document.getElementById("time");
+      
+      const currentDate = new Date().toDateString();
+      const currentTimezone = new Date().toTimeString();
+      timeElement.textContent =  currentDate + " " + currentTimezone;
+    });
+  
+
+
+
+
+    
+    const changePictureButton = document.getElementById("changePic");
+    changePictureButton.addEventListener("click", function() {
+      const pictureElement = document.getElementById("pic");
+      pictureElement.src = "dice-6.png";
+    });
+
+
+
+
+
+
+
+
+    const hidePictureButton = document.getElementById("hidePic");
+    hidePictureButton.addEventListener("click", function() {
+      const pictureElement = document.getElementById("pic");
+      pictureElement.style.display = "none";
+    });
+  
+
+
+
+
+
+    
+    const showPictureButton = document.getElementById("showPic");
+    showPictureButton.addEventListener("click", function() {
+      const pictureElement = document.getElementById("pic");
+      pictureElement.style.display = "block";
+    });
+  
+
+
+
+
+
+
+
+    
+    const demoElement = document.getElementById("demo");
+    headerButton.addEventListener("click", function() {
+    
+    });
+  
+
+
+
+
+
+   
+
+
+
+
+    
+
+  </script>
+  
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
